@@ -29,6 +29,7 @@
             <li>From Local Device</li>
             <li>From Youtube</li>
         </ol>
+        <li>Web Form</li>
     </ul>
     <!--Started the Explanation of above listed items-->
     <!--**********************************************-->
@@ -78,6 +79,84 @@
         <h3><li>From Youtube</li></h3>                                                                                       <!--We use Embed Iframe Element to get Youtube video on our page.-->
         <iframe width="50%"  src="https://www.youtube.com/embed/qARXCXvQXKY?si=IoOvVA3mDOed60Ss" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
     </ol>
+    <!--**********************************************-->
+    <br>
+    <hr>
+    <!--**********************************************-->
+    <h1>Web Form</h1>   <!--In this section I've Created a Payment Web Form in HTML to take data From the user-->
+    <h2>Intro to Web Form</h2>
+    <p>HTML web Form is used to collect data from user </p>
+    <hr>
+    <h2>Input Types</h2>
+    <p>There are many input types which we can find on <b><a href="https://www.w3schools.com/html/html_form_input_types.asp" target="_blank" draggable="true">W3School</a></b> but some of them are explained here as Following:</p>
+    <ul>
+        <b><li>Text:</li></b>
+            <p>&lt;input type=&quot;text&quot;&gt;</p>
+        <b><liَ>Password:</li></b>
+            <p>&lt;input type=&quot;password&quot;&gt;</p>
+        <b><li>Radio:</li></b>
+            <p>&lt;input type=&quot;radio&quot;&gt;</p>
+        <b><li>CheckBox:</li></b>
+            <p>&lt;input type=&quot;checkbox&quot;&gt;</p>
+        <b><li>File:</li></b>
+            <p>&lt;input type=&quot;file&quot;&gt;</p>
+        <b><li>Submit:</li></b>
+            <p>&lt;input type=&quot;submit&quot;&gt;</p>
+        <b><li>Reset:</li></b>
+            <p>&lt;input type=&quot;reset&quot;&gt;</p>
+        <b><li>Image:</li></b>
+            <p>&lt;input type=&quot;image&quot;&gt;</p>
+        <b><li>Select:</li></b>
+            <p>&lt;select&gt;</p>
+            <p>&lt;option value=&quot;lahore&quot;&gt;Lahore&lt;/option&gt;</p>
+            <p>&lt;option value=&quot;karachi&quot;&gt;Karachi&lt;/option&gt;</p>
+            <p>&lt;/select&gt;</p>
+    </ul>
+    
+    <br>
+    <hr><!-------------------------------------------------------------------------Form Body----------------------------------------------->
+    <br>
+    
+    <h2>Sample Payment Form Taken From <a href="https://www.youtube.com/watch?v=jRAZlTEZi9I&list=PLfqMhTWNBTe3H6c9OGXb5_6wcc1Mca52n&index=4" target="_blank">Apna College</a> :-</h2>
+    <hr>
+    <form action=""  >
+        <h3>Payment Form</h3>
+        <p>Required Fields are Followed by *</p>
+        <h3>Contact Information</h3>
+        <p>Name: * <input type="text" name="name" required></p> <!--Here "input" is used to show it is container to take information from the user,  "type"  property is used to define the type of this container and get data in the form of text, "Name" property is used to refer to the server that it is a name type field, and "Required" property is used to make it mandatory-->
+        <fieldset>  <!--The <fieldset> tag is used to group related elements in a form. The <fieldset> tag draws a box around the related elements.-->
+            <legend>Gender * </legend> <!--legend is used to group multiple things in a box i.e. used in this form to group male and female both genders.-->
+            <p>
+                <input type="radio" name="gender" id="male" required> Male  <!--"Radio" is used to show  multiple options for the user.--><br>
+                <input type="radio" name="gender" id="female" required> Female
+                <input type="radio" name="gender" id="not to say" required> Not to say
+            </p>
+        </fieldset>
+        <p>Address <textarea name="address" id="address" cols="100%" rows="5%"></textarea></p>
+        <p>Email: * <input type="email" name="email" id="email" required></p> <!--Type Email is used to maintain its syntax like it will show the error if @gmail.com is missing-->
+        <p>Pincode: * <input type="number" name="pincode" id="pincode" required></p>
+        <hr>
+        <h3>Billing Information</h3>
+            <p>Card Type: * 
+                <select name="cardtype" id="cardtype" required>     <!--This select is used to show a list with differet-->
+                    <option value="">--Select a Card Type--</option>
+                    <option value="visa">Visa</option>
+                    <option value="master card">Master Card</option>
+                    <option value="discovery">Discovery</option>
+                    <option value="paypal">Paypal</option>
+                </select>
+            </p>
+            <p>
+                Card Number: * <input type="number" name="card_number" id="card_number" required>
+            </p>
+            <p>
+                Expiration: * <input type="date" name="exp-date" id="exp-date" required>
+            </p>
+            <p>
+                CVV:  * <input type="password" name="cvv" id="cvv" required>
+            </p>
+            <input type="submit" value="Pay Now"><!--creating a Button to submit the form-->
+    </form>
     <!--**********************************************-->
     <br>
     <hr>
