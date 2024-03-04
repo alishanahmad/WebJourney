@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Intermediate HTML</title>
+</head>
+<body>
+    <h1>Intermediate HTML</h1>
+    <p>In this file I Tried to cover intermediate level of HTML</p>
+    <br>
+    <p>There are few Elements i've covered which are as Following:-</p>
+    <!-- Unordered List -->
+    <ul>                                <!--<ul> is used to create an un-ordered List-->
+        <li>List Element</li>                   <!--<li> is used to create a List Item-->
+        <ul>
+            <li>Un-Ordered List</li>
+            <li>Ordered List</li>
+        </ul>
+        <li>Anchor Element</li>
+        <ol>                            <!--Here I've used an Ordered List by using <ol> tag-->
+            <li>Absolute URL</li>
+            <li>Relative URL</li>
+
+        </ol>
+        <li>Image Element</li>
+        <li>Video</li>
+        <ol>
+            <li>From Local Device</li>
+            <li>From Youtube</li>
+        </ol>
+    </ul>
+    <!--Started the Explanation of above listed items-->
+    <!--**********************************************-->
+    <br>
+    <hr>
+    <!--**********************************************-->
+    <h2>List Element</h2>
+    <p>List Element is used to create a list of item or make a list of given items. There are Two types of list Element as following:-</p>
+    <ul>
+        <h3><li>Un-Ordered List</li></h3>
+        <p>An unordered list is used to create a list where it is not mandatory to maintain an order of the items.</p>
+        <h3><li>Ordered List</li></h3>
+        <p>An Ordered List is used to create list of elements where the order or hierarchy of required to be maintained.</p>
+        <p><strong>The Examples of both Ordered and Un-Ordered List are given Above.</strong></p>
+    </ul>
+    <!--**********************************************-->
+    <br>
+    <hr>
+    <!--**********************************************-->
+    <h2>Anchor Element</h2>
+    <p>An Anchor element in HTML represents a hyperlink, which makes it possible for users to click on a web page and be directed. There are Two Types of URLs:-</p>
+    <ol>
+        <h3><li>Absolute URL</li></h3>
+        <p>Absolute URLs are used to an absolute web page in which user can go to the specific web page directly by just single click. we use &lt;a href="URL"&gt;text&lt;/a&gt; syntax to create a hyperlink.</p>
+        <a href="https://www.w3schools.com/">W3School</a>
+        <h3><li>Relative URL</li></h3>
+        <p>Relative URLs are used to visit diferent pages located with respect to the current file.</p>
+        <a href="../Basic_HTMlL/index.html">Basic HTML</a>
+    </ol>
+    <!--**********************************************-->
+    <br>
+    <hr>
+    <!--**********************************************-->
+    <h2>Image Element</h2>
+    <p>Image Element is used to  display images on webpages. </p>
+    <img src="../Images_Videos/Sample_acas.jpg" alt="Sample_acas"> <!--Image tage is used to get image, src is used to get the URL of the image, alt is used to display default text alternatively if the image is not viewable due to any server or technical issue.-->
+    <!--**********************************************-->
+    <br>
+    <hr>
+    <!--**********************************************-->
+    <h2>Video Element</h2>
+    <p>Video Element is used to display video on the web page.</p>
+    <p>To import video on web page there are two way, either if video exists localy or on social media like YOUTUBE.</p>
+    <ol>
+        <h3><li>From Local Device</li></h3>
+        <video src="../Images_Videos/Take_Me_Away_by_NEW_MEDICINE_(lyrics_video)(1080p60).mp4" width="50%" controls></video><!--"video" Tage is used to import video, "srs" is used to get source URL, "width" is used to give width to the video on web page, "controls" is used to give all necessary controls to the video , e.g. play/pause,volume,full screen, playback speed etc.-->
+        <h3><li>From Youtube</li></h3>                                                                                       <!--We use Embed Iframe Element to get Youtube video on our page.-->
+        <iframe width="50%"  src="https://www.youtube.com/embed/qARXCXvQXKY?si=IoOvVA3mDOed60Ss" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+    </ol>
+    <!--**********************************************-->
+    <br>
+    <hr>
+    <!--**********************************************-->
+    
+</body>
+</html>
