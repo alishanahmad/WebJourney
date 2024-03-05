@@ -1,21 +1,33 @@
 
 *{
     margin: 0;
-    padding:0;
+    /*padding:0;*/
     box-sizing: border-box;
     font-family: 'Poppins',sans-serif;
 }
 body {
     margin: 0px;
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    /*font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;*/
 }
 header h1 {
     text-align: center;
     font-size: 40px;
     color: white;
 }
+.main{
+    display: flex;
+    gap: 2px;
+    background-image: url(../../Images_Videos/background1.jpg);
+    background-color: antiquewhite;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position-x: center;
+    
+}
 
 header {
+    
     padding: 20px;
     background-color: rgb(17, 124, 143);
     
@@ -34,14 +46,10 @@ nav a {
     color: white;
 }
 .header{ 
-    width: 100%;
-    height: 100vh;
-    background-image: url(../../Images_Videos/background1.jpg);
-    background-color: antiquewhite;
-    background-position: center;
-    background-size: cover;
-    background-attachment: fixed;
-    background-position-x: center;
+    width: auto;
+    height: 100%;
+    
+    
 }
 .header h1{
     color: white;
@@ -50,15 +58,17 @@ nav a {
 
 .side-nav{
     width: 110px;
+    height: 600px;
     border-radius: 5px;
-    position: center;
-    top:0;
-    bottom: 0;
-    overflow-y: scroll;
-    padding: 3% 0px;
+    /*position: center;*/
+    float: left;
+    /*top:0;
+    bottom: 0;*/
+    overflow-y: auto;
+    padding: 10% 0px;
     background: rgba(255, 255, 255, 0.247);
     backdrop-filter: blur(5px);
-    transition: width 0.5s;
+    transition: width .5s;
     
 }
 .user{
@@ -91,8 +101,15 @@ nav a {
 }
 .side-nav p{
     white-space: nowrap;
+    color: white;
     display: none;
+    
 }
+.side-nav a{
+    text-decoration: none;
+    cursor: pointer;
+}
+
 .ulli{
     margin:30px 0;
     display: flex;
@@ -101,7 +118,7 @@ nav a {
     cursor: pointer;
 
 }
-.x1{
+.SideNavImg{
    width: 30px;
    margin-right: 0px;
     
@@ -110,12 +127,27 @@ nav a {
     white-space: nowrap;
     display: none;
 }
+.MainBody{
+    
+    background: rgba(137, 43, 226, 0.2);
+    backdrop-filter: blur(5px);
+    padding: 10px;
+
+    width: 100%;
+    height: 600px;
+    float: right;
+    overflow: hidden ;
+    overflow-y: scroll;
+
+    
+    
+}
 .side-nav:hover{
     width: 300px;
     position: center;
     overflow-y: scroll;
 }
-.side-nav:hover .x1 {
+.side-nav:hover .SideNavImg {
     margin-left: 15px;
     display: flex;
     width: 25px;
@@ -127,22 +159,22 @@ nav a {
     backdrop-filter: blur(5px);
     display: flex;
     align-items:center;
-    border-left: 0px;
+    border-left: 10px;
     padding: 10px;
     border-radius: 8px;
-    width: 100%;
+    width: 95%;
 }
 .side-nav:hover .user img{
     position: relative;
-    width: 95px;
-    border-radius: 50%;
+    width: 90px;
+    border-radius: 10%;
     margin: left;
    
 }
 .side-nav:hover .user div{
     display: block;
 }
-.side-nav:hover .x1{
+.side-nav:hover .SideNavImg{
     margin-right: 10px;
 }
 .side-nav:hover p{
@@ -154,6 +186,8 @@ nav a {
     justify-content: flex-start;
 }
 footer {
+    clear: both;
+    width: 100%;
     background-color: #333;
     overflow: hidden;
 }
