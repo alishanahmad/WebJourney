@@ -145,9 +145,19 @@ nav a {
     /*font-weight:bold;*/
     width: 100%;
     height: 600px;
+    /* float: right; */
+    border-radius: 5px;
+    overflow: hidden ;
+    /* overflow-y: scroll; */
+}
+#UW{
+    /* display: flex;  */
+    /* color: rgb(0, 0, 0); */
+    right: auto;
+    width: 100%; 
     float: right;
     overflow: hidden ;
-    overflow-y: scroll;
+    /* overflow-y: scroll; */
 }
 .MainBody a{
     text-decoration: none;
@@ -157,8 +167,9 @@ nav a {
 }
 .MainBody:hover{
     background: #f76d0a42;
+    color: antiquewhite;
     backdrop-filter: blur(10px);
-    color:#fffdfd80;
+    /* color:#fffdfd80; */
 }
 .MainBody:hover a{
     color:#f76b0a
@@ -166,8 +177,8 @@ nav a {
 .side-nav:hover{
     width: 300px;
     position: center;
-    overflow-y: scroll;
-    background-color: #f76d0a1f;
+    /* overflow-y: scroll; */
+    background-color: #f0dbcd5e;
     backdrop-filter: blur(5px);
 }
 .side-nav:hover .SideNavImg {
